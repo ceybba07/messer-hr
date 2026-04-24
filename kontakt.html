@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440">
+  <title>Messer HR-Outsourcing — Kontakt</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/icons.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/booking.js" defer></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="https://www.figma.com/api/mcp/asset/d0862eba-36b8-498e-abae-9586164dcdad" alt="Messer HR-Outsourcing">
+      </a>
+      <div class="navbar__links">
+        <div class="navbar__dropdown">
+          <button type="button" class="navbar__link has-dropdown" aria-haspopup="true" aria-expanded="false">
+            Angebot
+            <span class="chevron" data-icon="chevron_down" style="width:20px;height:20px;display:inline-flex;"></span>
+          </button>
+          <div class="navbar__dropdown-menu" role="menu">
+            <a href="angebot-uebersicht.html" class="navbar__dropdown-item">
+              <span class="navbar__dropdown-item-title">Alle Pakete im Überblick</span>
+              <span class="navbar__dropdown-item-desc">Paket-Finder, Vergleich und FAQ</span>
+            </a>
+            <div class="navbar__dropdown-divider"></div>
+            <a href="angebot-detail.html" class="navbar__dropdown-item">
+              <span class="navbar__dropdown-item-title">HR-Basic</span>
+              <span class="navbar__dropdown-item-desc">Die solide HR-Administration für KMU</span>
+            </a>
+            <a href="angebot-detail.html" class="navbar__dropdown-item">
+              <span class="navbar__dropdown-item-title">HR-Plus</span>
+              <span class="navbar__dropdown-item-desc">Rundumbetreuung für wachsende Unternehmen</span>
+            </a>
+            <a href="angebot-detail.html" class="navbar__dropdown-item">
+              <span class="navbar__dropdown-item-title">HR-Strategic</span>
+              <span class="navbar__dropdown-item-desc">Externe HR-Leitung auf strategischer Ebene</span>
+            </a>
+          </div>
+        </div>
+        <a class="navbar__link" href="ueber-mich.html">Über mich</a>
+        <a class="navbar__link is-current" href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="navbar__actions">
+        <a data-booking-trigger href="#" class="btn btn--outline btn--navbar">Termin vereinbaren</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Zentrierter Hero -->
+  <section class="hero--centered">
+    <div class="hero-inner">
+      <h1>Lassen Sie uns zusammenarbeiten</h1>
+      <p>Ob kurzer Anruf, ein paar Zeilen per Mail oder ein direktes Erstgespräch: Wählen Sie den Weg, der für Sie am
+        angenehmsten ist. Ich melde mich innerhalb eines Arbeitstages zurück.</p>
+      <a data-booking-trigger href="#" class="btn btn--primary">Erstgespräch buchen</a>
+    </div>
+  </section>
+
+  <!-- Contact Methods: Mail + Telefon -->
+  <section class="contact-methods">
+    <!-- Grosse beige Fläche oben links (rotiert, ragt weit heraus) -->
+    <span class="stil-kontakt stil-kontakt--beige" data-stil="kontakt-beige"></span>
+    <!-- Braune Fläche unten rechts (rotiert, ragt weit heraus) -->
+    <span class="stil-kontakt stil-kontakt--braun" data-stil="kontakt-braun"></span>
+    <div class="contact-methods__inner">
+      <div class="contact-method">
+        <span class="contact-method__icon" data-icon="mail"></span>
+        <h3>Mail</h3>
+        <p>Für Anfragen, die Sie strukturiert formulieren möchten oder wenn Sie direkt Unterlagen mitsenden wollen.</p>
+        <a class="contact-method__link" href="mailto:info@messer-hr-outsourcing.ch">info@messer-hr-outsourcing.ch</a>
+      </div>
+      <div class="contact-method">
+        <span class="contact-method__icon" data-icon="call"></span>
+        <h3>Telefon</h3>
+        <p>Für einen direkten Austausch oder wenn Sie eine erste Einschätzung im Gespräch wünschen. Werktags erreichbar
+          zwischen 8:00 und 17:00 Uhr.</p>
+        <a class="contact-method__link" href="tel:+41793279288">+41 79 327 92 88</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formular -->
+  <section class="contact-form-section" id="formular">
+    <div class="contact-form-section__inner">
+      <div class="contact-form-section__title">
+        <h2>Ihre Nachricht</h2>
+        <p>Schreiben Sie mir direkt über das Formular. Ich antworte innerhalb eines Arbeitstages.</p>
+      </div>
+      <form class="contact-form">
+        <div class="contact-form__field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Andrea Mustermann" required>
+        </div>
+        <div class="contact-form__field">
+          <label for="email">E-Mail</label>
+          <input id="email" type="email" placeholder="andrea.mustermann@beispiel.ch" required>
+        </div>
+        <div class="contact-form__field">
+          <label for="nachricht">Nachricht</label>
+          <textarea id="nachricht" placeholder="Schreiben Sie hier Ihre Nachricht..." required></textarea>
+        </div>
+        <div class="contact-form__checkbox">
+          <input type="checkbox" id="datenschutz" required>
+          <label for="datenschutz">Ich akzeptiere die <a href="#">Datenschutzerklärung</a>.</label>
+        </div>
+        <div>
+          <button type="submit" class="btn btn--primary">Senden</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Sticky CTA -->
+  <a href="#" data-booking-trigger class="sticky-cta" aria-label="Erstgespräch buchen">
+  <span data-icon="calendar_add" style="width:42px;height:42px;color:#fff;"></span>
+  </a>
+
+  <!-- Footer (ohne CTA-Band auf der Kontaktseite) -->
+  <footer class="footer" style="background:var(--off-white);">
+    <div class="footer__inner">
+      <div class="footer__card">
+        <div class="footer__left">
+          <div class="footer__logo"><img src="https://www.figma.com/api/mcp/asset/f51f59d9-31e0-4cd0-9e0b-70b1b631887c"
+              alt=""></div>
+          <div class="footer__address">
+            <div><strong>Adresse</strong>Hauptstrasse 15, 3035 Frieswil</div>
+            <div><strong>Kontakt:</strong>+41 79 327 92 88<br>info@messer-hr-outsourcing.ch</div>
+          </div>
+          <div class="footer__social">
+            <a href="#" aria-label="LinkedIn"><span data-icon="linkedin"
+                style="width:24px;height:24px;display:inline-flex;"></span></a>
+          </div>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__links">
+            <a class="heading">Navigation</a>
+            <a href="angebot-uebersicht.html">Angebot</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="#">HR-Insights</a>
+            <a href="kontakt.html">Kontakt</a>
+          </div>
+          <div class="footer__links">
+            <a class="heading">Pakete</a>
+            <a href="angebot-detail.html">HR-Basic</a>
+            <a href="angebot-detail.html">HR-Plus</a>
+            <a href="angebot-detail.html">HR-Strategic</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__credits">
+        <span>© 2023 – 2026 Messer HR-Outsourcing</span>
+        <div class="footer__credits-links">
+          <a href="#">Datenschutzerklärung</a>
+          <a href="#">Impressum</a>
+          <a href="#">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
