@@ -791,8 +791,8 @@ p.caption {
 .about-split__stil {
   position: absolute;
   z-index: 10;
-  left: -299px;
-  top: 25px;
+  right: 0px;
+  bottom: 0px;
   width: 980px;
   height: 727px;
   pointer-events: none;
@@ -2140,8 +2140,8 @@ p.caption {
 .stil-kontakt--beige {
   left: 0px;
   top: 0px;
-  width: 773px;
-  height: 598px;
+  width: 1000px;
+
 }
 
 /* Braune Fläche unten rechts
@@ -2346,6 +2346,10 @@ p.caption {
 .reveal--visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.feature-row {
+  text-align: left;
 }
 
 /* Gestaffelte Verzögerung für Grid-Items */
