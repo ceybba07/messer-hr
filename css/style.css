@@ -1009,7 +1009,7 @@ p.caption {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background: var(--primary-accent);
+  background: var(--primary-dark);
   color: var(--white);
   display: flex;
   align-items: center;
